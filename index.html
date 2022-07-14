@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://www.mundialeditora.com/image/data/M-Fav2.png" rel="icon" />
+    <title>Fechamento Pós Vendas</title>
+    <!--Link to css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+  <!--Navbar-->
+    <nav>
+        <a href="#home" class="logo">Mundial Editora</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+
+        <!--Menu-->
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#adc" onclick="toggleMenu();">Análise de Crédito</a></li>
+            <li><a href="#credit-card" onclick="toggleMenu();">Cartão de Crédito</a></li>
+            <li><a href="#pix-container"onclick="toggleMenu();">Pix</a></li>
+        </ul>
+    </nav>
+    <!--Main text and Image-->
+    <section id="home">
+        <div class="home-text">
+            <h1>Fechamento<br> <span>Análise de Crédito</span> <br>Julho,2022</h1>
+            <!--Button-->
+        </div>
+
+        <div class="home">
+            <img src="https://www.perolapanfletos.com.br/wp-content/uploads/2017/07/mundial-500.png" alt="logo mundial editora">
+         </div>
+    </section>
+         <section id="adc">
+            <div class="heading">
+             <h2>Análise de Crédito</h2>   
+             <p>Informações</p>
+            </div>
+    
+            <!--About Content-->
+            <div class="adc-content">
+                <div class="adc-img">
+                    <canvas id="chart"></canvas>
+                </div>
+               <div class="adc-text">
+                <h1>Comentários</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laborum assumenda magnam vel ipsum voluptatum ipsa quasi unde quae? Vel, voluptatem.  
+                    <br>
+                    <br>Vendas Canceladas:
+                    <br>Vendas Confirmadas:
+                    <br>Vendas Confirmadas:
+                    <br>Vendas Devolvidas:
+                    <br><b>Total de Vendas:</b>
+                    <br>
+
+                   <br><b>Comparativo com os últimos 3 meses:</b> 
+                   <br>Abril:
+                   <br>Maio:
+                   <br>Junho:
+                </p>
+
+            </div> 
+            </div>
+        </section>
+    
+    <section id="credit-card">
+        <div class="heading">
+            <h2>Cartão de Crédito</h2>   
+            <p>Meses Anteriores</p>
+           </div>
+        <canvas id="SecondChart"></canvas>
+    </div>
+    </section>
+    <div class="heading">
+        <h2>PIX</h2>   
+        <p>Meses Anteriores</p>
+    <section id="pix-container">
+         <canvas id="pixChart"></canvas>
+    </section>
+    <script src="node_modules/chart.js/dist/chart.js"></script>
+    <script src="graphs.js"></script>
+</body>
+</html>
